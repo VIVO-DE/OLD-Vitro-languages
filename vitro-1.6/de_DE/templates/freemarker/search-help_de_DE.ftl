@@ -3,28 +3,27 @@
 <#if origination?has_content && origination == "helpLink">
     <h2>Search Tips</h2>
     <span id="searchHelp">
-        <a href="#" onClick="history.back();return false;" title="back to results">Back to results</a>
+        <a href="#" onClick="history.back();return false;" title="back to results">Zurück zu den Suchergebnissen</a>
     </span>
 <#else>
-    <h3>Search Tips</h3>        
+    <h3>Suchtipps</h3>        
 </#if>
 <ul class="searchTips">
-    <li>Keep it simple! Use short, single terms unless your searches are returning too many results.</li>
-    <li>Use quotes to search for an entire phrase -- e.g., "<i>protein folding</i>".</li>
-    <li>Except for boolean operators, searches are <strong>not</strong> case-sensitive, so "Geneva" and "geneva" are equivalent</li>
-    <li>If you are unsure of the correct spelling, put ~ at the end of your search term -- e.g., <i>cabage~</i> finds <i>cabbage</i>, <i>steven~</i> finds <i>Stephen</i> and <i>Stefan</i> (as well as other similar names).</li>
+    <li>Halten Sie es einfach! Verwenden Sie kurze, einzelne Begriffe, wenn ihre Suche zu viele Ergebnisse liefert.</li>
+    <li>Verwenden Sie Anführungszeichen für die Suche nach einem ganzen Satz -- z.B. "<i>Protein falten</i>".</li>
+    <li>Mit Ausnahme Boolescher Operatoren, sind Suchen <strong>nicht</strong> case-sensitive, also sind "Genf" und "genf" identisch</li>
+    <li>Wenn Sie sich unsicher über die korrekte Rechtschreibung sind, nuzen Sie ~ am Ende Ihres Suchbegriffes -- Bsp.: <i>cabage~</i> findet <i>cabbage</i>, <i>steven~</i> findet <i>Stephen</i> und <i>Stefan</i> (und andere, ähnliche Namen).</li>
 </ul>
     
-<h4><a id="advTipsLink" href="#">Advanced Tips</a></h4>    
+<h4><a id="advTipsLink" href="#">Tipps für Fortgeschrittene</a></h4>    
 <ul id="advanced" class="searchTips" style="visibility:hidden">
-    <li>When you enter more than one term, search will return results containing all of them unless you add the Boolean "OR" -- e.g., <i>chicken</i> OR <i>egg</i>.</li>
-    <li>NOT" can help limit searches -- e.g., <i>climate</i> NOT <i>change</i>.</li>
-    <li>Phrase searches may be combined with Boolean operators -- e.g. "<i>climate change</i>" OR "<i>global warming</i>".</li>
-    <li>Close word variations will also be found -- e.g., <i>sequence</i> matches <i>sequences</i> and <i>sequencing</i>.</li>
-    <li>Use the wildcard * character to match an even wider variation -- e.g., <i>nano*</i> will match both <i>nanotechnology</i> and <i>nanofabrication</i>.</li>
-    <li>Search uses shortened versions of words -- e.g., a search for <i>cogniti*</i> finds nothing, while <i>cognit*</i> finds both <i>cognitive</i> and <i>cognition</i>.</li> 
+    <li>Wenn Sie mehr als einen Begriff angeben, wird die Suche nur Ergebnisse liefern, die alle Begriffe enthalten, es sei denn Sie ergänzen "OR" -- z.B. <i>Huhn</i> OR <i>Ei</i>.</li>
+    <li>"NOT" kann zur Einschränkung der Suche verwendet werden, -- z.B. <i>Klima</i> NOT <i>Veränderung</i>.</li>
+    <li>Wortgruppensuchen können mit Booleschen Operatoren kombiniert werden -- z.B. "<i>Klima Veränderung</i>" OR "<i>Globale Erwärmung</i>".</li>
+    <li>Wortvariationen werden auch gefunden -- Bsp.: <i>Sequenz</i> findet <i>Sequenzen</i> and <i>Sequenzierung</i>.</li>
+    <li>Verwenden Sie das Wildcard-Zeichen * um mehr Variationen zu finden -- Bsp.: <i>nano*</i> findet <i>Nanotechnologie</i> sowie <i>Nanofabrikation</i>.</li>
 </ul>
-<a id="closeLink" href="#"  style="visibility:hidden;font-size:.825em;padding-left:8px">Close</a>
+<a id="closeLink" href="#"  style="visibility:hidden;font-size:.825em;padding-left:8px">Schließen</a>
 ${stylesheets.add('<link rel="stylesheet" href="${urls.base}/css/search.css" />')}
 <script type="text/javascript">
     $(document).ready(function(){
